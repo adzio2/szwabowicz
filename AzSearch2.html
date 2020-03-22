@@ -81,7 +81,7 @@
     // Initialize and connect to your search service
     var automagic = new AzSearch.Automagic({ index: "azureblob-index2", queryKey: "89D6EA35167EA670E3CA2D455CBB16CE", service: "spc2search" });
     
-    const resultTemplate = `<div class="col-xs-12 col-sm-9 col-md-9"><h4>{{metadata_storage_path}}</h4><div class="resultDescription">{{{test2}}}</div></div>`;
+    const resultTemplate = `<div class="col-xs-12 col-sm-9 col-md-9"><h4>{{metadata_storage_path}}</h4><div class="resultDescription">{{{merged_content}}}</div></div>`;
 
     // add a results view using the template defined above
     automagic.addResults("results", { count: true }, resultTemplate);
